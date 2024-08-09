@@ -1,0 +1,198 @@
+/*
+.hero-image {
+    position: relative;
+    height: 100vh;
+    background: url('/images/Lady\ with\ camera.png') no-repeat center center;
+    background-size: cover;
+}
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+}
+.bottom-image-wrapper {
+    position: fixed; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 95px; 
+    text-align: center; 
+    z-index: 2; 
+
+.bottom-image {
+    width: 95px; 
+    height: auto; 
+}
+
+.hero-text, .logo-container {
+    position: relative; 
+    z-index: 2; 
+    color: white;
+}
+.hero-text {
+    position: absolute; 
+    z-index: 2; 
+    color: white;
+    text-align: left; 
+    padding-left: 20px; 
+    top: calc(45px + 275px); 
+    left: 160px; 
+    transform: translateY(0); 
+}
+.hero-text h1 {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 70px; 
+    font-weight: 700;
+    line-height: 60px; 
+    margin: 0;
+    white-space: pre-line; 
+}
+.hero-text .highlight {
+    font-family: "open sans";
+    color: #F27830; 
+    font-size: 70px; 
+}
+
+.logo-container {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    transform: translateX(144px) scale(0.8); 
+.logo {
+    width: 174.55px;
+    transform: rotate(15deg); 
+    transform-origin: top left;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "open sans", sans-serif;
+    font-size: 90px; 
+    margin-left: 20px; 
+    font-weight: 700;
+    line-height: 80px;
+}
+.text span {
+    margin: 5px 0; 
+}
+.lead {
+    font-size: 30px; 
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700; 
+    color: white; 
+    margin: 0; 
+    line-height: 80px; 
+.btn-download {
+    display: inline-block;
+    width: 307px;
+    height: 70px;
+    background-color: #F27830; 
+    color: white;
+    text-align: center;
+    line-height: 70px; 
+    font-size: 20px; 
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px; 
+    margin-top: 10px; 
+    z-index: 2; 
+}
+    */
+    .hero-image {
+        position: relative;
+        height: 100vh;
+        background: url('/images/Lady\ with\ camera.png') no-repeat center center;
+        background-size: cover;
+        display: flex; /* Make hero-image a flex container */
+        align-items: center; /* Center align the content vertically */
+    }
+    
+    .hero-text, .logo-container {
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px; /* Space below logo and text */
+        transform: scale(0.8);
+    }
+    .logo img {
+        width: 174px; /* Set the width of the logo image */
+        transform: rotate(15deg); /* Rotate the image 15 degrees */
+        transform-origin: top left; /* Ensure rotation from the top-left corner */
+    }
+    
+    .hero-text {
+        padding-left: 20px;
+    }
+    
+    .hero-text h1 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 60px;
+        margin: 0;
+        white-space: pre-line;
+    }
+    
+    .hero-text .highlight {
+        color: #F27830;
+        font-size: 70px;
+    }
+    
+    .btn-download {
+        display: inline-block;
+        width: 307px;
+        height: 70px;
+        background-color: #F27830;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        z-index: 2;
+    }
+    
+    .bottom-image-wrapper {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95px;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .bottom-image {
+        width: 95px;
+        height: auto;
+    }.text {
+        display: flex;
+        flex-direction: column; /* Stack the text vertically */
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 90px; /* Adjust as needed */
+        margin-left: 20px; /* Space between logo and text */
+        font-weight: 700;
+        line-height: 80px;
+    }
+    
+    .text span {
+        margin: 5px 0; /* Space between lines of text */
+    }
