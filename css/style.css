@@ -38,384 +38,345 @@
     padding-left: 20px;
     transform: translateY(170px);
 }
-    /*
-    .hero-image {
-        position: relative;
-        height: 100vh;
-        background: url('/images/Lady\ with\ camera.png') no-repeat center center;
-        background-size: cover;
-        display: flex; 
-        align-items: center; 
-    }
+   
     
-    .hero-text, .logo-container {
-        position: relative;
-        z-index: 2;
-        color: white;
-    }
+.hero-text h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    white-space: pre-line;
+}
     
-    .logo-container {
-        height: 90px; 
-        position: absolute; 
-        top: 30px; 
-        left: 0px; 
-        display: flex;
-        align-items: center; 
-        gap: 10px; 
-        transform: scale(0.35); 
-    }
-    .logo img {
-        width: 174px; 
-        transform: rotate(15deg); 
-        transform-origin: top left; 
-    }
+.hero-text .highlight {
+    color: #F27830;
+    font-size: 70px;
+}
     
-    .hero-text {
-        padding-left: 20px;
+.btn-download {
+    display: inline-block;
+    width: 307px;
+    height: 60px;
+    background-color: #F27830;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    z-index: 2;
+    transition: background-color 0.3s ease;
         
-    }*/
+}
+.btn-download:hover {
+    background-color: #FFBF99; 
+}
+.bottom-image-wrapper {
+    position: absolute; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 95px; 
+    text-align: center; 
+    z-index: 2; 
+}
     
-    .hero-text h1 {
-        font-family: "Open Sans", sans-serif;
-        font-size: 70px;
-        font-weight: 700;
-        line-height: 60px;
-        margin: 0;
-        white-space: pre-line;
-    }
+.bottom-image {
+    width: 70px; 
+    height: auto; 
+}
+.text {
+    display: flex;
+    flex-direction: column; 
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 90px; 
+    margin-left: 20px; 
+    font-weight: 700;
+    line-height: 80px;
+}
     
-    .hero-text .highlight {
-        color: #F27830;
-        font-size: 70px;
-    }
-    
-    .btn-download {
-        display: inline-block;
-        width: 307px;
-        height: 60px;
-        background-color: #F27830;
-        color: black;
-        text-align: center;
-        line-height: 60px;
-        font-size: 20px;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        z-index: 2;
-        transition: background-color 0.3s ease;
-        
-    }
-    .btn-download:hover {
-        background-color: #FFBF99; 
-    }
-    .bottom-image-wrapper {
-        position: absolute; 
-        bottom: 30px; 
-        left: 50%; 
-        transform: translateX(-50%); 
-        width: 95px; 
-        text-align: center; 
-        z-index: 2; 
-    }
-    
-    .bottom-image {
-        width: 70px; 
-        height: auto; 
-    }
-    .text {
-        display: flex;
-        flex-direction: column; 
-        color: white;
-        font-family: "Open Sans", sans-serif;
-        font-size: 90px; 
-        margin-left: 20px; 
-        font-weight: 700;
-        line-height: 80px;
-    }
-    
-    .text span {
-        margin: 5px 0; 
-    }
-    .lead {
-        font-size: 30px; 
-        font-family: "Open Sans", sans-serif; 
-        font-weight: 700; 
-        color: white; 
-        margin: 0; 
-        line-height: 80px; 
-        margin-top: 30px;
-    }
+.text span {
+    margin: 5px 0; 
+}
+.lead {
+    font-size: 30px; 
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700; 
+    color: white; 
+    margin: 0; 
+    line-height: 80px; 
+    margin-top: 30px;
+}
 
-    .intro-text {
-        font-family: "Open Sans", sans-serif; 
-        font-size: 35px; 
-        font-weight: 700; 
-        line-height: 1.5; 
-        color: #111111; 
-        margin-bottom: 20px; 
-        line-height: 60px;
+.intro-text {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 35px; 
+    font-weight: 700; 
+    line-height: 1.5; 
+    color: #111111; 
+    margin-bottom: 20px; 
+    line-height: 60px;
        
-    }
+}
     
     
-    .intro-text img {
-        max-width: 100%; 
-        height: auto;
-    }
-    .description {
-        font-family: "Open Sans", sans-serif; 
-        font-size: 20px; 
-        font-weight: 400; 
-        line-height: 30px; 
-        color: #333; 
-    }
+.intro-text img {
+    max-width: 100%; 
+    height: auto;
+}
+.description {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 20px; 
+    font-weight: 400; 
+    line-height: 30px; 
+    color: #333; 
+}
     
-    .background-container {
-        background-color: #FAFAFA; 
-        padding: 20px; 
-        margin-top: 40px; 
-        width: 100%; 
-    }
+.background-container {
+    background-color: #FAFAFA; 
+    padding: 20px; 
+    margin-top: 40px; 
+    width: 100%; 
+}
     
     
-    .background-container .container {
-        max-width: 100%; 
-    }
-    .row.mt-5 {
-        display: flex; 
-        align-items: flex-start; 
+.background-container .container {
+    max-width: 100%; 
+}
+.row.mt-5 {
+    display: flex; 
+    align-items: flex-start; 
+    
+}
+    
+.col-md-4 {
+    display: flex;
+    justify-content: center; 
         
-        
-        
-        
-    }
+}
     
-    .col-md-4 {
-        display: flex;
-        justify-content: center; 
+.section-heading {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700; 
+    font-size: 65px; 
+}
+.small-image {
+    width: 51px; 
+    height: auto; 
         
-    }
-    
-    
-    
-    .section-heading {
-        font-family: "Open Sans", sans-serif; 
-        font-weight: 700; 
-        font-size: 65px; 
-    }
-    .small-image {
-        width: 51px; 
-        height: auto; 
-        
-    }
-    .paragraph-text {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 1.4; 
-        color: #111111; 
-        margin: 0; 
-    }
+}
+.paragraph-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.4; 
+    color: #111111; 
+    margin: 0; 
+}
 
-    .left-image {
-        height: 690px; 
-        width: auto;   
-        max-width: 100%; 
-    }
-    .col-md-8 {
-        display: flex;
-        flex-direction: column; 
+.left-image {
+    height: 690px; 
+    width: auto;   
+    max-width: 100%; 
+}
+.col-md-8 {
+    display: flex;
+    flex-direction: column; 
         
-    }
+}
 
-    .paragraph-item {
-        display: flex;
-        align-items: flex-start; 
-        margin-bottom: 20px; 
-        gap: 40px;
-    }
-    .paragraph-item img {
-        margin-right: 40px; 
-        width: 51px; 
-        height: auto; 
-    }.container-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        width: 100%; 
-    }
-    .image-row-section {
+.paragraph-item {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+    gap: 40px;
+}
+.paragraph-item img {
+    margin-right: 40px; 
+    width: 51px; 
+    height: auto; 
+}
+.container-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    padding: 65px
+}
+.image-row-section {
+    background-color: #d9d9d9; 
+}
+    
+.image-row {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    display: block; 
+}
+    
+    
+.image-row-section .row {
+    display: flex; 
         
+}
+.faqs-section {
+    background-color: #d9d9d9; 
+    padding: 60px 0; 
+}
+    
+.new-section {
+    background-color: #d9d9d9; 
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 8px; 
+}
+    
+.section-header {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700; 
+    font-size: 50px; 
+    color: #111; 
+    margin-bottom: 15px; 
+}
+    
+.section-subtext {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 400; 
+    font-size: 20px; 
+    color: #111; 
+    margin-bottom: 40px;
+}
+.stacked-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.stacked-item {
         
-        background-color: #d9d9d9; 
-    }
+    display: flex; 
+    align-items: flex-start;
+    margin-bottom: 20px; 
+    max-width: 800px; 
+    width: 100%;
+}
     
-    .image-row {
-        width: 100%; 
-        height: auto; 
-        max-width: 100%; 
-        margin: 0 auto; 
-        display: block; 
-    }
+.stacked-image {
+    width: 50px; 
+    height: auto; 
+    margin-right: 15px;
+}
     
-    
-    .image-row-section .row {
-        display: flex; 
+.stacked-content {
         
-    }
-    .faqs-section {
-        background-color: #d9d9d9; 
-        padding: 60px 0; 
-    }
+    text-align: left;
+    margin-left: 15px;
+}
     
-    .new-section {
-        background-color: #d9d9d9; 
-        padding: 20px; 
-        text-align: center; 
-        border-radius: 8px; 
-    }
-    
-    .section-header {
-        font-family: "Open Sans", sans-serif; 
-        font-weight: 700; 
-        font-size: 50px; 
-        color: #111; 
-        margin-bottom: 15px; 
-    }
-    
-    .section-subtext {
-        font-family: "Open Sans", sans-serif; 
-        font-weight: 400; 
-        font-size: 20px; 
-        color: #111; 
-        margin-bottom: 40px;
-    }
-    .stacked-sections {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .stacked-item {
+.stacked-header {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 700; 
+    font-size: 24px; 
+    color: #111; 
+    margin-bottom: 10px; 
+    margin-top: 0;
         
-        display: flex; 
-        align-items: flex-start;
-        margin-bottom: 20px; 
-        max-width: 800px; 
-        width: 100%;
-    }
+}
     
-    .stacked-image {
-        width: 50px; 
-        height: auto; 
-        margin-right: 15px;
-    }
-    
-    .stacked-content {
-        
-        text-align: left;
-        margin-left: 15px;
-    }
-    
-    .stacked-header {
-        font-family: "Open Sans", sans-serif; 
-        font-weight: 700; 
-        font-size: 24px; 
-        color: #111; 
-        margin-bottom: 10px; 
-        margin-top: 0;
-        
-    }
-    
-    .stacked-text {
-        font-family: "Open Sans", sans-serif; 
-        font-weight: 400; 
-        font-size: 18px; 
-        color: #333; 
-        margin: 0; 
-    }
+.stacked-text {
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 400; 
+    font-size: 18px; 
+    color: #333; 
+    margin: 0; 
+}
 
-    .download-section {
-        background-color: #f8f9fa; 
-        padding-top: 40px; 
-        padding-bottom: 40px;
-    }
+.download-section {
+    background-color: #f8f9fa; 
+    padding-top: 40px; 
+    padding-bottom: 40px;
+}
     
-    .download-header {
-        font-family: "Open Sans", sans-serif; 
-        font-size: 36px; 
-        font-weight: 700; 
-        color: #111; 
-        margin: 0; 
-    }
-    .button-wrapper {
-        display: flex; 
-        justify-content: center; 
-        flex-wrap: wrap; 
-        padding: 65px; 
-        background-color: #f8f9fa; 
-    }
+.download-header {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 36px; 
+    font-weight: 700; 
+    color: #111; 
+    margin: 0; 
+}
+.button-wrapper {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 65px; 
+    background-color: #f8f9fa; 
+}
     
-    .btn-app-store, .btn-google-play {
-        display: flex;
-        align-items: center; 
-        padding: 10px 20px; 
-        font-family: "Open Sans", sans-serif; 
-        text-decoration: none; 
-        border-radius: 5px;
-        color: black;
-        transition: background-color 0.3s ease; 
-        background-color: #F27830;
-        max-width: 300px; 
-        text-align: left;
-        margin: 0 10px;
-    }
-    .btn-app-store:hover, .btn-google-play:hover {
-        background-color: #FFBF99; 
-    }
+.btn-app-store, .btn-google-play {
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px; 
+    font-family: "Open Sans", sans-serif; 
+    text-decoration: none; 
+    border-radius: 5px;
+    color: black;
+    transition: background-color 0.3s ease; 
+    background-color: #F27830;
+    max-width: 300px; 
+    text-align: left;
+    margin: 0 10px;
+}
+.btn-app-store:hover, .btn-google-play:hover {
+    background-color: #FFBF99; 
+}
     
-    .btn-app-store {
-        background-color: #F27830; 
-    }
+.btn-app-store {
+    background-color: #F27830; 
+}
     
-    .btn-app-store:hover {
-        background-color: #FFBF99; 
-    }
+.btn-app-store:hover {
+    background-color: #FFBF99; 
+}
     
-    .btn-google-play {
-        background-color: #F27830; 
-    }
+.btn-google-play {
+    background-color: #F27830; 
+}
     
-    .btn-google-play:hover {
-        background-color: #FFBF99; 
-    }
+.btn-google-play:hover {
+    background-color: #FFBF99; 
+}
     
-    .btn-icon {
-        width: 24px; 
-        height: auto; 
+.btn-icon {
+    width: 24px; 
+    height: auto; 
         
-    }
-    .btn-text {
-        margin-left: 10px; 
-        text-align: left;
-    }
-    .btn-small-text {
-        font-size: 14px; 
-    }
+}
+.btn-text {
+    margin-left: 10px; 
+    text-align: left;
+}
+.btn-small-text {
+    font-size: 14px; 
+}
     
-    .btn-large-text {
-        font-size: 18px; 
-        font-weight: 700; 
+.btn-large-text {
+    font-size: 18px; 
+    font-weight: 700; 
         
-    }
-    .copyright {
-        font-family: "Open Sans", sans-serif; 
-        font-size: 14px; 
-        color: #111; 
-        margin: 65px 0 0; 
-        text-align: center; 
-        line-height: 1.5; 
+}
+.copyright {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 14px; 
+    color: #111; 
+    margin: 65px 0 0; 
+    text-align: center; 
+    line-height: 1.5; 
         
-    }
+}
