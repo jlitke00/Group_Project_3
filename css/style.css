@@ -1,11 +1,51 @@
 
+.hero-image-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; 
+}
+.hero-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+.hero-text, .logo-container {
+    position: relative;
+    z-index: 2; 
+    color: white;
+}
+.logo-container {
+    height: 90px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: scale(0.35);
+}
+.logo img {
+    width: 174px;
+    transform: rotate(15deg);
+    transform-origin: top left;
+}
+.hero-text {
+    
+    padding-left: 20px;
+    transform: translateY(170px);
+}
+    /*
     .hero-image {
         position: relative;
         height: 100vh;
         background: url('/images/Lady\ with\ camera.png') no-repeat center center;
         background-size: cover;
-        display: flex; /* Make hero-image a flex container */
-        align-items: center; /* Center align the content vertically */
+        display: flex; 
+        align-items: center; 
     }
     
     .hero-text, .logo-container {
@@ -15,25 +55,25 @@
     }
     
     .logo-container {
-        height: 90px; /* Set height to 90px */
-        position: absolute; /* Absolute positioning for precise control */
-        top: 30px; /* 30 pixels from the top */
-        left: 0px; /* 30 pixels from the left */
+        height: 90px; 
+        position: absolute; 
+        top: 30px; 
+        left: 0px; 
         display: flex;
-        align-items: center; /* Vertically center the content */
-        gap: 10px; /* Optional: Add some space between logo and text */
-        transform: scale(0.35); /* Scale down the logo and text if needed */
+        align-items: center; 
+        gap: 10px; 
+        transform: scale(0.35); 
     }
     .logo img {
-        width: 174px; /* Set the width of the logo image */
-        transform: rotate(15deg); /* Rotate the image 15 degrees */
-        transform-origin: top left; /* Ensure rotation from the top-left corner */
+        width: 174px; 
+        transform: rotate(15deg); 
+        transform-origin: top left; 
     }
     
     .hero-text {
         padding-left: 20px;
         
-    }
+    }*/
     
     .hero-text h1 {
         font-family: "Open Sans", sans-serif;
@@ -65,86 +105,87 @@
         margin-top: 10px;
         z-index: 2;
         transition: background-color 0.3s ease;
+        
     }
     .btn-download:hover {
-        background-color: #FFBF99; /* Hover color */
+        background-color: #FFBF99; 
     }
     .bottom-image-wrapper {
-        position: absolute; /* Absolute positioning within the hero-image */
-        bottom: 30px; /* 30 pixels from the bottom of the hero-image */
-        left: 50%; /* Center horizontally within the hero-image */
-        transform: translateX(-50%); /* Offset by half of its own width to center */
-        width: 95px; /* Width of the image wrapper */
-        text-align: center; /* Center the image within the wrapper */
-        z-index: 2; /* Ensure it is above other elements */
+        position: absolute; 
+        bottom: 30px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 95px; 
+        text-align: center; 
+        z-index: 2; 
     }
     
     .bottom-image {
-        width: 70px; /* Set the width of the image */
-        height: auto; /* Maintain aspect ratio */
+        width: 70px; 
+        height: auto; 
     }
     .text {
         display: flex;
-        flex-direction: column; /* Stack the text vertically */
+        flex-direction: column; 
         color: white;
         font-family: "Open Sans", sans-serif;
-        font-size: 90px; /* Adjust as needed */
-        margin-left: 20px; /* Space between logo and text */
+        font-size: 90px; 
+        margin-left: 20px; 
         font-weight: 700;
         line-height: 80px;
     }
     
     .text span {
-        margin: 5px 0; /* Space between lines of text */
+        margin: 5px 0; 
     }
     .lead {
-        font-size: 30px; /* Set the font size to 30 pixels */
-        font-family: "Open Sans", sans-serif; /* Ensure consistent font family */
-        font-weight: 700; /* Adjust weight if needed */
-        color: white; /* Ensure the text color is white if it's on a dark background */
-        margin: 0; /* Remove default margin if necessary */
-        line-height: 80px; /* Adjust line height for better readability, optional */
+        font-size: 30px; 
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 700; 
+        color: white; 
+        margin: 0; 
+        line-height: 80px; 
         margin-top: 30px;
     }
 
     .intro-text {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-size: 35px; /* Font size set to 35px */
-        font-weight: 700; /* Bold font weight */
-        line-height: 1.5; /* Improve readability with line height */
-        color: #111111; /* Adjust text color for contrast, if needed */
-        margin-bottom: 20px; /* Space below paragraphs */
+        font-family: "Open Sans", sans-serif; 
+        font-size: 35px; 
+        font-weight: 700; 
+        line-height: 1.5; 
+        color: #111111; 
+        margin-bottom: 20px; 
         line-height: 60px;
        
     }
     
-    /* Optional: Adjust image size if needed */
+    
     .intro-text img {
-        max-width: 100%; /* Ensure images are responsive */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; 
+        height: auto;
     }
     .description {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-size: 20px; /* Font size set to 20px */
-        font-weight: 400; /* Regular font weight */
-        line-height: 30px; /* Improve readability with line height */
-        color: #333; /* Adjust text color for contrast */
+        font-family: "Open Sans", sans-serif; 
+        font-size: 20px; 
+        font-weight: 400; 
+        line-height: 30px; 
+        color: #333; 
     }
     
     .background-container {
-        background-color: #FAFAFA; /* Background color */
-        padding: 20px; /* Add padding around the container */
-        margin-top: 40px; /* Space above the section */
-        width: 100%; /* Ensure the container stretches across the viewport */
+        background-color: #FAFAFA; 
+        padding: 20px; 
+        margin-top: 40px; 
+        width: 100%; 
     }
     
     
     .background-container .container {
-        max-width: 100%; /* Ensure inner container does not exceed the background container width */
+        max-width: 100%; 
     }
     .row.mt-5 {
-        display: flex; /* Use flexbox to align items */
-        align-items: flex-start; /* Align items to the top of the container */
+        display: flex; 
+        align-items: flex-start; 
         
         
         
@@ -153,102 +194,102 @@
     
     .col-md-4 {
         display: flex;
-        justify-content: center; /* Center the image horizontally */
+        justify-content: center; 
         
     }
     
     
     
     .section-heading {
-        font-family: "Open Sans", sans-serif; /* Ensures the use of Open Sans font */
-        font-weight: 700; /* Bold font weight */
-        font-size: 65px; /* Font size set to 65px */
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 700; 
+        font-size: 65px; 
     }
     .small-image {
-        width: 51px; /* Set the width of the small images */
-        height: auto; /* Maintain aspect ratio */
+        width: 51px; 
+        height: auto; 
         
     }
     .paragraph-text {
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 50px;
-        line-height: 1.4; /* Optional: Adjust line height for readability */
-        color: #111111; /* Optional: Adjust text color if needed */
-        margin: 0; /* Remove margin to ensure consistent alignment */
+        line-height: 1.4; 
+        color: #111111; 
+        margin: 0; 
     }
 
     .left-image {
-        height: 690px; /* Set the height of the image */
-        width: auto;   /* Automatically adjust width to maintain aspect ratio */
-        max-width: 100%; /* Ensure it doesn't exceed the container's width */
+        height: 690px; 
+        width: auto;   
+        max-width: 100%; 
     }
     .col-md-8 {
         display: flex;
-        flex-direction: column; /* Stack paragraphs vertically */
+        flex-direction: column; 
         
     }
 
     .paragraph-item {
         display: flex;
-        align-items: flex-start; /* Align items to the top of the container */
-        margin-bottom: 20px; /* Space below each paragraph item */
+        align-items: flex-start; 
+        margin-bottom: 20px; 
         gap: 40px;
     }
     .paragraph-item img {
-        margin-right: 40px; /* Space between the image and text */
-        width: 51px; /* Consistent size */
-        height: auto; /* Maintain aspect ratio */
+        margin-right: 40px; 
+        width: 51px; 
+        height: auto; 
     }.container-bottom {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center horizontally within the container */
-        width: 100%; /* Ensure the container takes full width */
+        align-items: center; 
+        width: 100%; 
     }
     .image-row-section {
         
         
-        background-color: #d9d9d9; /* Optional: Add background color to match your design */
+        background-color: #d9d9d9; 
     }
     
     .image-row {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 100%; /* Optional: Set a maximum width for each image */
-        margin: 0 auto; /* Center images horizontally in their column */
-        display: block; /* Ensure images are displayed as block elements */
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        display: block; 
     }
     
     
     .image-row-section .row {
-        display: flex; /* Use flexbox to align columns in a row */
+        display: flex; 
         
     }
     .faqs-section {
-        background-color: #d9d9d9; /* Background color */
-        padding: 60px 0; /* Padding around the section */
+        background-color: #d9d9d9; 
+        padding: 60px 0; 
     }
     
     .new-section {
-        background-color: #d9d9d9; /* Background color to match the section */
-        padding: 20px; /* Padding inside the section */
-        text-align: center; /* Center the text */
-        border-radius: 8px; /* Optional: Rounded corners */
+        background-color: #d9d9d9; 
+        padding: 20px; 
+        text-align: center; 
+        border-radius: 8px; 
     }
     
     .section-header {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-weight: 700; /* Bold font weight */
-        font-size: 50px; /* Font size for header */
-        color: #111; /* Text color */
-        margin-bottom: 15px; /* Space below the header */
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 700; 
+        font-size: 50px; 
+        color: #111; 
+        margin-bottom: 15px; 
     }
     
     .section-subtext {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-weight: 400; /* Regular font weight */
-        font-size: 20px; /* Font size for subtext */
-        color: #111; /* Text color */
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 400; 
+        font-size: 20px; 
+        color: #111; 
         margin-bottom: 40px;
     }
     .stacked-sections {
@@ -258,125 +299,123 @@
     }
     
     .stacked-item {
-        /* Flex container for each stacked item */
-        /* Remove background color and padding */
-        display: flex; /* Flex container for each stacked item */
+        
+        display: flex; 
         align-items: flex-start;
-        margin-bottom: 20px; /* Space below each stacked item */
-        max-width: 800px; /* Limit the width of the stacked items */
+        margin-bottom: 20px; 
+        max-width: 800px; 
         width: 100%;
     }
     
     .stacked-image {
-        width: 50px; /* Width of the image */
-        height: auto; /* Maintain aspect ratio */
+        width: 50px; 
+        height: auto; 
         margin-right: 15px;
     }
     
     .stacked-content {
-        /* Content area next to the image */
+        
         text-align: left;
         margin-left: 15px;
     }
     
     .stacked-header {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-weight: 700; /* Semi-bold font weight */
-        font-size: 24px; /* Font size for header */
-        color: #111; /* Text color */
-        margin-bottom: 10px; /* Space below 
-        the header */
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 700; 
+        font-size: 24px; 
+        color: #111; 
+        margin-bottom: 10px; 
         margin-top: 0;
         
     }
     
     .stacked-text {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-weight: 400; /* Regular font weight */
-        font-size: 18px; /* Font size for text */
-        color: #333; /* Text color */
-        margin: 0; /* Remove margin */
+        font-family: "Open Sans", sans-serif; 
+        font-weight: 400; 
+        font-size: 18px; 
+        color: #333; 
+        margin: 0; 
     }
 
     .download-section {
-        background-color: #f8f9fa; /* Light background color */
-        padding-top: 40px; /* Space above the section */
+        background-color: #f8f9fa; 
+        padding-top: 40px; 
         padding-bottom: 40px;
     }
     
     .download-header {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-size: 36px; /* Font size for the header */
-        font-weight: 700; /* Bold font weight */
-        color: #111; /* Text color */
-        margin: 0; /* Remove default margin */
+        font-family: "Open Sans", sans-serif; 
+        font-size: 36px; 
+        font-weight: 700; 
+        color: #111; 
+        margin: 0; 
     }
     .button-wrapper {
-        display: flex; /* Use flexbox for button alignment */
-        justify-content: center; /* Center the buttons horizontally */
-        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-        padding: 65px; /* Add padding around the outside of the buttons */
-        background-color: #f8f9fa; /* Ensure background matches the section */
+        display: flex; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        padding: 65px; 
+        background-color: #f8f9fa; 
     }
     
     .btn-app-store, .btn-google-play {
         display: flex;
-        align-items: center; /* Center icons and text vertically */
-        padding: 10px 20px; /* Add padding around the button text */
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        text-decoration: none; /* Remove underline */
+        align-items: center; 
+        padding: 10px 20px; 
+        font-family: "Open Sans", sans-serif; 
+        text-decoration: none; 
         border-radius: 5px;
         color: black;
-        transition: background-color 0.3s ease; /* Smooth background color transition */
+        transition: background-color 0.3s ease; 
         background-color: #F27830;
-        max-width: 300px; /* Set a max width to prevent stretching */
+        max-width: 300px; 
         text-align: left;
         margin: 0 10px;
     }
     .btn-app-store:hover, .btn-google-play:hover {
-        background-color: #FFBF99; /* Slightly darker orange for hover effect */
+        background-color: #FFBF99; 
     }
     
     .btn-app-store {
-        background-color: #F27830; /* Dark color for the App Store button */
+        background-color: #F27830; 
     }
     
     .btn-app-store:hover {
-        background-color: #FFBF99; /* Darker color on hover */
+        background-color: #FFBF99; 
     }
     
     .btn-google-play {
-        background-color: #F27830; /* Google Play color */
+        background-color: #F27830; 
     }
     
     .btn-google-play:hover {
-        background-color: #FFBF99; /* Darker green on hover */
+        background-color: #FFBF99; 
     }
     
     .btn-icon {
-        width: 24px; /* Set a consistent width for the icons */
-        height: auto; /* Maintain aspect ratio */
+        width: 24px; 
+        height: auto; 
         
     }
     .btn-text {
-        margin-left: 10px; /* Space between the icon and text */
+        margin-left: 10px; 
         text-align: left;
     }
     .btn-small-text {
-        font-size: 14px; /* Smaller font size for the upper text */
+        font-size: 14px; 
     }
     
     .btn-large-text {
-        font-size: 18px; /* Larger font size for the main button text */
-        font-weight: 700; /* Bold font weight */
+        font-size: 18px; 
+        font-weight: 700; 
         
     }
     .copyright {
-        font-family: "Open Sans", sans-serif; /* Consistent font family */
-        font-size: 14px; /* Font size for the copyright text */
-        color: #111; /* Text color */
-        margin: 65px 0 0; /* Remove default margin */
-        text-align: center; /* Center the text */
-        line-height: 1.5; /* Line height for readability */
+        font-family: "Open Sans", sans-serif; 
+        font-size: 14px; 
+        color: #111; 
+        margin: 65px 0 0; 
+        text-align: center; 
+        line-height: 1.5; 
         
     }
