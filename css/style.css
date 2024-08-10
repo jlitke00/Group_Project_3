@@ -1,112 +1,4 @@
-/*
-.hero-image {
-    position: relative;
-    height: 100vh;
-    background: url('/images/Lady\ with\ camera.png') no-repeat center center;
-    background-size: cover;
-}
-.hero-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); 
-    z-index: 1; 
-}
-.bottom-image-wrapper {
-    position: fixed; 
-    bottom: 30px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 95px; 
-    text-align: center; 
-    z-index: 2; 
 
-.bottom-image {
-    width: 95px; 
-    height: auto; 
-}
-
-.hero-text, .logo-container {
-    position: relative; 
-    z-index: 2; 
-    color: white;
-}
-.hero-text {
-    position: absolute; 
-    z-index: 2; 
-    color: white;
-    text-align: left; 
-    padding-left: 20px; 
-    top: calc(45px + 275px); 
-    left: 160px; 
-    transform: translateY(0); 
-}
-.hero-text h1 {
-    font-family: "Open Sans", sans-serif; 
-    font-size: 70px; 
-    font-weight: 700;
-    line-height: 60px; 
-    margin: 0;
-    white-space: pre-line; 
-}
-.hero-text .highlight {
-    font-family: "open sans";
-    color: #F27830; 
-    font-size: 70px; 
-}
-
-.logo-container {
-    position: absolute;
-    top: 45px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    transform: translateX(144px) scale(0.8); 
-.logo {
-    width: 174.55px;
-    transform: rotate(15deg); 
-    transform-origin: top left;
-}
-.text {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: "open sans", sans-serif;
-    font-size: 90px; 
-    margin-left: 20px; 
-    font-weight: 700;
-    line-height: 80px;
-}
-.text span {
-    margin: 5px 0; 
-}
-.lead {
-    font-size: 30px; 
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 700; 
-    color: white; 
-    margin: 0; 
-    line-height: 80px; 
-.btn-download {
-    display: inline-block;
-    width: 307px;
-    height: 70px;
-    background-color: #F27830; 
-    color: white;
-    text-align: center;
-    line-height: 70px; 
-    font-size: 20px; 
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 5px; 
-    margin-top: 10px; 
-    z-index: 2; 
-}
-    */
     .hero-image {
         position: relative;
         height: 100vh;
@@ -123,10 +15,14 @@
     }
     
     .logo-container {
+        height: 90px; /* Set height to 90px */
+        position: absolute; /* Absolute positioning for precise control */
+        top: 30px; /* 30 pixels from the top */
+        left: 0px; /* 30 pixels from the left */
         display: flex;
-        align-items: center;
-        margin-bottom: 20px; /* Space below logo and text */
-        transform: scale(0.8);
+        align-items: center; /* Vertically center the content */
+        gap: 10px; /* Optional: Add some space between logo and text */
+        transform: scale(0.35); /* Scale down the logo and text if needed */
     }
     .logo img {
         width: 174px; /* Set the width of the logo image */
@@ -136,6 +32,7 @@
     
     .hero-text {
         padding-left: 20px;
+        
     }
     
     .hero-text h1 {
@@ -155,11 +52,11 @@
     .btn-download {
         display: inline-block;
         width: 307px;
-        height: 70px;
+        height: 60px;
         background-color: #F27830;
-        color: white;
+        color: black;
         text-align: center;
-        line-height: 70px;
+        line-height: 60px;
         font-size: 20px;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
@@ -167,22 +64,26 @@
         border-radius: 5px;
         margin-top: 10px;
         z-index: 2;
+        transition: background-color 0.3s ease;
     }
-    
+    .btn-download:hover {
+        background-color: #FFBF99; /* Hover color */
+    }
     .bottom-image-wrapper {
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 95px;
-        text-align: center;
-        z-index: 2;
+        position: absolute; /* Absolute positioning within the hero-image */
+        bottom: 30px; /* 30 pixels from the bottom of the hero-image */
+        left: 50%; /* Center horizontally within the hero-image */
+        transform: translateX(-50%); /* Offset by half of its own width to center */
+        width: 95px; /* Width of the image wrapper */
+        text-align: center; /* Center the image within the wrapper */
+        z-index: 2; /* Ensure it is above other elements */
     }
     
     .bottom-image {
-        width: 95px;
-        height: auto;
-    }.text {
+        width: 70px; /* Set the width of the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .text {
         display: flex;
         flex-direction: column; /* Stack the text vertically */
         color: white;
@@ -195,4 +96,194 @@
     
     .text span {
         margin: 5px 0; /* Space between lines of text */
+    }
+    .lead {
+        font-size: 30px; /* Set the font size to 30 pixels */
+        font-family: "Open Sans", sans-serif; /* Ensure consistent font family */
+        font-weight: 700; /* Adjust weight if needed */
+        color: white; /* Ensure the text color is white if it's on a dark background */
+        margin: 0; /* Remove default margin if necessary */
+        line-height: 80px; /* Adjust line height for better readability, optional */
+        margin-top: 30px;
+    }
+
+    .intro-text {
+        font-family: "Open Sans", sans-serif; /* Consistent font family */
+        font-size: 35px; /* Font size set to 35px */
+        font-weight: 700; /* Bold font weight */
+        line-height: 1.5; /* Improve readability with line height */
+        color: #111111; /* Adjust text color for contrast, if needed */
+        margin-bottom: 20px; /* Space below paragraphs */
+        line-height: 60px;
+       
+    }
+    
+    /* Optional: Adjust image size if needed */
+    .intro-text img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .description {
+        font-family: "Open Sans", sans-serif; /* Consistent font family */
+        font-size: 20px; /* Font size set to 20px */
+        font-weight: 400; /* Regular font weight */
+        line-height: 30px; /* Improve readability with line height */
+        color: #333; /* Adjust text color for contrast */
+    }
+    
+    .background-container {
+        background-color: #FAFAFA; /* Background color */
+        padding: 20px; /* Add padding around the container */
+        margin-top: 40px; /* Space above the section */
+        width: 100%; /* Ensure the container stretches across the viewport */
+    }
+    
+    
+    .background-container .container {
+        max-width: 100%; /* Ensure inner container does not exceed the background container width */
+    }
+    .row.mt-5 {
+        display: flex; /* Use flexbox to align items */
+        align-items: flex-start; /* Align items to the top of the container */
+        
+        
+        
+        
+    }
+    
+    .col-md-4 {
+        display: flex;
+        justify-content: center; /* Center the image horizontally */
+        
+    }
+    
+    
+    
+    .section-heading {
+        font-family: "Open Sans", sans-serif; /* Ensures the use of Open Sans font */
+        font-weight: 700; /* Bold font weight */
+        font-size: 65px; /* Font size set to 65px */
+    }
+    .small-image {
+        width: 51px; /* Set the width of the small images */
+        height: auto; /* Maintain aspect ratio */
+        
+    }
+    .paragraph-text {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 1.4; /* Optional: Adjust line height for readability */
+        color: #111111; /* Optional: Adjust text color if needed */
+        margin: 0; /* Remove margin to ensure consistent alignment */
+    }
+
+    .left-image {
+        height: 690px; /* Set the height of the image */
+        width: auto;   /* Automatically adjust width to maintain aspect ratio */
+        max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    }
+    .col-md-8 {
+        display: flex;
+        flex-direction: column; /* Stack paragraphs vertically */
+        
+    }
+
+    .paragraph-item {
+        display: flex;
+        align-items: flex-start; /* Align items to the top of the container */
+        margin-bottom: 20px; /* Space below each paragraph item */
+        gap: 40px;
+    }
+    .paragraph-item img {
+        margin-right: 40px; /* Space between the image and text */
+        width: 51px; /* Consistent size */
+        height: auto; /* Maintain aspect ratio */
+    }.container-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally within the container */
+        width: 100%; /* Ensure the container takes full width */
+    }
+    .image-row-section {
+        
+        
+        background-color: #d9d9d9; /* Optional: Add background color to match your design */
+    }
+    
+    .image-row {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Optional: Set a maximum width for each image */
+        margin: 0 auto; /* Center images horizontally in their column */
+        display: block; /* Ensure images are displayed as block elements */
+    }
+    
+    /* Optional: Add margins to ensure spacing between images */
+    .image-row-section .row {
+        display: flex; /* Use flexbox to align columns in a row */
+        
+    }
+    .faqs-section {
+        background-color: #d9d9d9; /* Background color */
+        padding: 40px 0; /* Padding around the section */
+    }
+    
+    .new-section {
+        background-color: #d9d9d9; /* Background color to match the section */
+        padding: 20px; /* Padding inside the section */
+        text-align: center; /* Center the text */
+        border-radius: 8px; /* Optional: Rounded corners */
+    }
+    
+    .section-header {
+        font-family: "Open Sans", sans-serif; /* Consistent font family */
+        font-weight: 700; /* Bold font weight */
+        font-size: 50px; /* Font size for header */
+        color: #111; /* Text color */
+        margin-bottom: 15px; /* Space below the header */
+    }
+    
+    .section-subtext {
+        font-family: "Open Sans", sans-serif; /* Consistent font family */
+        font-weight: 400; /* Regular font weight */
+        font-size: 20px; /* Font size for subtext */
+        color: #111; /* Text color */
+        margin: 0; /* Remove margin */
+    }
+    .stacked-sections {
+        /* Container for the stacked items */
+    }
+    
+    .stacked-item {
+        /* Flex container for each stacked item */
+        /* Remove background color and padding */
+        margin-bottom: 20px; /* Space below each stacked item */
+    }
+    
+    .stacked-image {
+        width: 50px; /* Width of the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .stacked-content {
+        /* Content area next to the image */
+    }
+    
+    .stacked-header {
+        font-family: "Open Sans", sans-serif; /* Consistent font family */
+        font-weight: 600; /* Semi-bold font weight */
+        font-size: 24px; /* Font size for header */
+        color: #111; /* Text color */
+        margin-bottom: 10px; /* Space below 
+        the header */
+        
+    }
+    
+    .stacked-text {
+        font-family: "Open Sans", sans-serif; /* Consistent font family */
+        font-weight: 400; /* Regular font weight */
+        font-size: 16px; /* Font size for text */
+        color: #333; /* Text color */
+        margin: 0; /* Remove margin */
     }
