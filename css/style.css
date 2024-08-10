@@ -2,7 +2,7 @@
     .hero-image {
         position: relative;
         height: 100vh;
-        background: url('/images/Lady%20with%20camera.png') no-repeat center center;
+        background: url('/images/Lady\ with\ camera.png') no-repeat center center;
         background-size: cover;
         display: flex; /* Make hero-image a flex container */
         align-items: center; /* Center align the content vertically */
